@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+}
+
+canvas{
+    border: 2px solid white;
+}
+
+#actionsUI{
+    color: white;
+    border: 2px solid white;
+    width: 500px;
+    height: 100px;
+}
+
+#statsUI{
+    color: white;
+    border: 2px solid white;
+    width: 200px;
+    height: 700px;
+}
+
+#battleScene{
+    color: white;
+    border: 2px solid white;
+    width: 500px;
+    height: 600px;
+}
