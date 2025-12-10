@@ -1,28 +1,97 @@
 body{
     background-color: black;
-}
-
-canvas{
-    border: 2px solid white;
+    font-family: 'Pokemon Emerald', monospace;
 }
 
 #actionsUI{
     color: white;
     border: 2px solid white;
-    width: 500px;
-    height: 100px;
+    width: 740px;
+    height: 150px;
+    position: absolute;
+    left: 235px;
+    top: 650px;
 }
 
 #statsUI{
     color: white;
     border: 2px solid white;
     width: 200px;
-    height: 700px;
+    height: 790px;
+    position: absolute;
+    top: 10px;
 }
 
 #battleScene{
+    background: url(./Images/gradient.gif);
+    background-size: 740px 605px;
+    color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    border: 2px solid white;
+    width: 740px;
+    height: 605px;
+    position: absolute;
+    top: 10px;
+    left: 235px;
+}
+
+#playerImage{
+    position: absolute;
+    top: 200px;
+    left: 250px;
+}
+
+#enemy1Image{
+    position: absolute;
+    top: 200px;
+    left: 600px;
+}
+
+#battleLog{
+    background-color: black;
+    position: absolute;
+    top: 395px;
+    left: 10px;
+    width: 720px;
+    height: 200px;
     color: white;
     border: 2px solid white;
-    width: 500px;
-    height: 600px;
+    overflow-y: auto;
+}
+
+#endScreen{
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    width: 600px;
+    height: 300px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+
+@keyframes damageAnimation {
+    0% {
+        color: orange; 
+        transform: translateX(10px);
+    }
+    25% {
+        color: red; 
+        transform: translateY(-10px); 
+    }
+    50% { 
+        color: red; 
+        transform: translateX(-10px); 
+    }
+    75% { 
+        color: orange;
+        transform: translateY(10px); 
+    }
+    100% {
+        color: white; 
+        transform: translateX(0px); 
+    }
 }

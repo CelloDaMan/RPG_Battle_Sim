@@ -8,22 +8,48 @@
 
 <body>
     <div id="battleScene">
-        <h2>This is the battle scene</h2>
-        <h4>HP: 20</h4>
-        <h4>Enemy HP: 10</h4>
-        <button id="basicAttackBtn">Attack</button>
-        <button id="skillsBtn">Skills</button>
+        <h1 id="playerCurrentHP">HP: 20</h1>
+        <h1 id="enemy1CurrentHP">Enemy HP: 10</h1>
+        <div id="battleLog">
+        </div>
+    </div>
+
+    <div id="playerImage">
+        <img src="./Images/playerPlaceholder.png" width="300px">
+    </div>
+
+    <div id="enemy1Image">
+        <img src="./Images/enemy1Placeholder.png" width="300px">
     </div>
 
     <div id="statsUI">
-        <h2>This is the Stats UI</h2>
+        <h2>Level:</h2>
+        <h4 id="playerLevel">Player Level: 1</h4>
+        <h4 id="expToNextLevelText">EXP to Next Level: 50</h4>
+        <br>
+        <h2>Stats:</h2>
+        <p id="playerMaxHP">Max Health: 20</p>
+        <p id="playerAttackStat">Attack: 5</p>
+        <p id="playerDefenseStat">Defense: 2</p>
+        <br>
+        <h2>Enemy Stats:</h2>
+        <p id="enemyMaxHP">Max Health: 10</p>
+        <p id="enemyAttackStat">Attack: 2</p>
+        <p id="enemyDefenseStat">Defense: 1</p>
     </div>
     
     <div id="actionsUI">
         <h2>This is the Action UI</h2>
+        <button id="basicAttackBtn">Attack</button>
+        <button id="skill1Btn" style="display: none">Full Force</button>
+        <button id="skill2Btn" style="display: none">Life Leech</button>
     </div>
 
-    <canvas width="800" height="600"></canvas>
+    <div id="endScreen">
+        <h1 id="endMessage">This is the end screen</h1>
+        <button id="restartBtn">Restart Game</button>
+    </div>
+
     <script src="battlesim.js">
 
     </script>
