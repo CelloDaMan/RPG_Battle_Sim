@@ -163,9 +163,17 @@ function switchEnemy() {
     document.getElementById("enemyMaxHP").innerText = "Max Health: " + enemy1.maxHealth;
     document.getElementById("enemyAttackStat").innerText = "Attack: " + enemy1.attack;
     document.getElementById("enemyDefenseStat").innerText = "Defense: " + enemy1.defense;
-    if (currentIndex == 9) {
+    // Checks enemy index to change enemy image if needed
+    if (currentIndex == 3) {
+        document.getElementById("enemy1Image").innerHTML = '<img src="./Images/adachitrue.jpg" width="300px">';
+    } else if (currentIndex == 8) {
+        document.getElementById("enemy1Image").innerHTML = '<img src="./Images/playerPlaceholder.png" width="300px">';
+    } else if (currentIndex == 9) {
+    // Checks if the last enemy was defeated to win game
         gameWin();
-    };
+    } else {
+        document.getElementById("enemy1Image").innerHTML = '<img src="./Images/blanchedalmonds.avif" width="300px">';
+    }
 };
 
 // Function for enemy's turn
