@@ -1,7 +1,7 @@
 // Character stats
 var charHealth = 20;
 var charMaxHealth = 20;
-var charAttack = 50;
+var charAttack = 5;
 var charDefense = 2;
 
 // Character's level variables
